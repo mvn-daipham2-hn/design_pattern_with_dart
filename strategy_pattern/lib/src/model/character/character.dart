@@ -7,7 +7,7 @@ abstract class Character {
 
   void flight();
 
-  void switchWeapon(WeaponBehavior newWeaponBehavior) {
+  void setWeapon(WeaponBehavior newWeaponBehavior) {
     print('Switching new weapon...');
     weaponBehavior = newWeaponBehavior;
   }
