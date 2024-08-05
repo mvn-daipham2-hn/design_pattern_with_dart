@@ -1,30 +1,25 @@
-import '../model/measurement.dart';
-import '../observers/observer.dart';
-import 'subject.dart';
+import 'observable.dart';
 
-class WeatherData implements Subject {
-  final _observers = <Observer>[];
-  Measurement state = Measurement.init();
+class WeatherData extends Observable {
+  double? _temperature;
+  double? _humidity;
+  double? _pressure;
 
-  @override
-  void notifyObservers() {
-    for (var observer in _observers) {
-      observer.update(state);
-    }
-  }
-
-  @override
-  void registerObserver(Observer observer) {
-    _observers.add(observer);
-  }
-
-  @override
-  void removeObserver(Observer observer) {
-    _observers.remove(observer);
-  }
-
-  void measurementsChanged(Measurement newMeasurement) {
-    state = newMeasurement;
+  void measurementsChanged(
+    double? temperature,
+    double? humidity,
+    double? pressure,
+  ) {
+    _temperature = temperature;
+    _humidity = humidity;
+    _pressure = pressure;
+    setChanged();
     notifyObservers();
   }
+
+  double? get pressure => _pressure;
+
+  double? get humidity => _humidity;
+
+  double? get temperature => _temperature;
 }
