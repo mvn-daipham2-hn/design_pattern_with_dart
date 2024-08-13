@@ -7,3 +7,4 @@ linter:
   rules:
     prefer_relative_imports: true
     unnecessary_getters_setters: false
+    avoid_print: false
