@@ -33,7 +33,12 @@ class Observable {
     }
 
     clearChanged();
-    for (var observer in obs) {
+    // We capture `obs` at this point to ensure stability throughout notify processing.
+    // And the worst result of any potential race-condition here is that:
+    // 1) a newly-added Observer will miss a notification in progress
+    // 2) a recently unregistered Observer will be wrongly notified when it doesn't care
+    Set<Observer> arrLocal = Set.of(obs);
+    for (var observer in arrLocal) {
       observer.update(this, arg);
     }
   }
