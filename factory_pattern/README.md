@@ -77,7 +77,7 @@ That allows us to implement a variety of factories that produce products meant f
 </details>
 
 # Strategy Pattern vs Factory Pattern(from ChatGPT)
-> While the **Strategy Pattern** can indeed encapsulate the creation of objects, it is not its primary purpose. So, if you want to encapsulate **how** something is done (like which algorithm to use), use the **Strategy Pattern**. If you want to encapsulate **what** is created (like which object to instantiate), use the **Factory Pattern**.
+While the **Strategy Pattern** can indeed encapsulate the creation of objects, it is not its primary purpose. So, if you want to encapsulate **how** something is done (like which algorithm to use), use the **Strategy Pattern**. If you want to encapsulate **what** is created (like which object to instantiate), use the **Factory Pattern**.
 <details>
   <summary>View more details</summary>
 
