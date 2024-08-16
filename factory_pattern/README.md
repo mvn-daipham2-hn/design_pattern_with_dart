@@ -10,7 +10,7 @@ The Simple Factory pattern aims to encapsulate the object creation process. It p
 ![Screenshot 2024-08-14 at 17 03 55](https://github.com/user-attachments/assets/cfdd3a85-f43b-40ea-94e0-8bf59d367b8a)
 </details>
 
-# Factory Method Pattern
+# Factory Method
 > The Factory Method Pattern defines an interface for creating an object but lets subclasses decide which class to instantiate. Factory Method lets a class defer instantiation to subclasses.
 <details>
   <summary>View more details</summary>
@@ -19,6 +19,29 @@ The Simple Factory pattern aims to encapsulate the object creation process. It p
 The Factory Method pattern is designed to allow subclasses to alter the type of objects that will be created. It lets the client classes defer instantiation to subclasses.
 ## UML diagram: 
 ![Screenshot 2024-08-14 at 16 44 46](https://github.com/user-attachments/assets/65e5d4fc-63f3-41c3-af1d-c981e71d9ad7)
+
+> Apply to Pizza Store
+![Screenshot 2024-08-16 at 11 42 45](https://github.com/user-attachments/assets/81e235ec-e45c-4caf-b6dd-dec4db8171a8)
+## Noted Points:
+1. In design patterns, the phrase “implement an interface” does NOT always mean “write a class implements an interface,
+by using the “implements” keyword in the class declaration.” In the general use of the phrase, a concrete class implementing a method from a supertype (which could be a class OR interface) is still considered to be “implementing the interface” of that supertype.
+</details>
+
+# Abstract Factory
+> The Abstract Factory Pattern provides an interface for creating families of related or dependent objects without specifying their concrete classes.
+<details>
+  <summary>View more details</summary>
+  
+## Problem-solving: 
+An Abstract Factory gives us an interface(`AbstractFactory`) for creating a family of products(`AbstractProductA`, `AbstractProductB`...). By writing code that uses this interface, we decouple our code from the actual factory(`ConcreteFactory1`, `ConcreteFactory2`...) that creates the products.
+
+That allows us to implement a variety of factories that produce products meant for different contexts – such as different regions, different operating systems, or different looks and feels.
+
+## UML diagram: 
+![Screenshot 2024-08-16 at 10 53 10](https://github.com/user-attachments/assets/3d959bae-9f48-4c50-b530-3f45e04461f2)
+
+> Apply to Pizza Store
+![Screenshot 2024-08-16 at 11 39 59](https://github.com/user-attachments/assets/25796fc9-1e5b-4b57-91ca-d037d3b4f769)
 </details>
 
 # Design Principles:
