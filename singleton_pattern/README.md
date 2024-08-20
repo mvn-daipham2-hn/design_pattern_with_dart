@@ -15,3 +15,8 @@ It violates the **One Class, One Responsibility** principle, but there is utilit
 In addition, the Singleton code is trivial to add to any existing class.
 
 3. If you are using a large number of Singletons in your application, you should take a hard look at your design. Singletons are meant to be used sparingly.
+
+## Singletons vs Global Variables
+- Global Variables are suitable for **constants**, **simple values** that don’t require encapsulation, or **when performance is a critical factor**.
+
+- Singletons are better when you need a single instance of a class with controlled access and possible future extensions, such as for shared resources like **databases**, **configuration settings**, or **service objects**.
