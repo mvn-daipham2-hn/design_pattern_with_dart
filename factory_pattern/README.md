@@ -42,6 +42,9 @@ That allows us to implement a variety of factories that produce products meant f
 
 > Apply to Pizza Store
 ![Screenshot 2024-08-16 at 11 39 59](https://github.com/user-attachments/assets/25796fc9-1e5b-4b57-91ca-d037d3b4f769)
+
+## Noted Points:
+1. Often the methods of an Abstract Factory are implemented as factory methods. The job of an `Abstract Factory` is to define an interface for creating a set of products. Each method in that interface is responsible for creating a concrete product, and we implement a subclass of the `Abstract Factory` to supply those implementations. So, factory methods are a natural way to implement your product methods in your abstract factories.
 </details>
 
 # Design Principles:
@@ -76,6 +79,20 @@ That allows us to implement a variety of factories that produce products meant f
   | **Flexibility** | It's less flexible because adding new types requires modifying the factory method, which can violate the Open/Closed Principle| It's more flexible because the object creation is deferred to subclasses. The superclass doesn't need to know about specific classes being instantiated, adhering better to the Open/Closed Principle |
 </details>
 
+# Factory Method vs Abstract Factory
+> Both patterns encapsulate object creation and allow the decoupling of code from concrete types. And often the methods of an Abstract Factory are implemented as factory methods.
+<details>
+  <summary>View more details</summary>
+
+| Criterial | Factory Method | Abstract Factory |
+|:---:|---|---|
+| Scope | Deals with a single object| Deals with a family of related objects|
+| Create objects | Through inheritance| Through object composition|
+| Keep clients decoupled from the concrete types| Using a subclass to do object creation. In that way, clients only need to know the abstract type they are using, the subclass worries about the concrete type| Provide an abstract type for creating a family of products. Subclasses of this type define how those products are produced.|
+| Scalability | - | Interface has to change if new products are added. And of course, have to go in and change the interface of every subclass.|
+| Usage| Used when a class can't anticipate the type of objects it must create.| Used when the system needs to be independent of how its objects are created and represented.|
+</details>
+
 # Strategy Pattern vs Factory Pattern(from ChatGPT)
 While the **Strategy Pattern** can indeed encapsulate the creation of objects, it is not its primary purpose. So, if you want to encapsulate **how** something is done (like which algorithm to use), use the **Strategy Pattern**. If you want to encapsulate **what** is created (like which object to instantiate), use the **Factory Pattern**.
 <details>
@@ -94,4 +111,5 @@ While the **Strategy Pattern** can indeed encapsulate the creation of objects, i
 - Strategy Pattern: Like a toolbox where you can pick different tools (behaviors) based on the task at hand.
 - Factory Pattern: Like a machine that produces different types of parts (objects) depending on the settings (input conditions).
 </details>
+
 
