@@ -65,7 +65,7 @@ That allows us to implement a variety of factories that produce products meant f
 - No method should override an implemented method of any of its base classes(If you override an implemented method, then your base class wasn't really an abstraction to start with. Those methods implemented in the base class are meant to be shared by all your subclasses).
 </details>
 
-# Simple Factory vs Factory Method(from ChatGPT)
+# Simple Factory vs Factory Method
 - **Control over Object Creation**: In Simple Factory, object creation is centralized and not designed for extension. In Factory Method, object creation is deferred to subclasses, which gives more flexibility and follows object-oriented principles better.
 - **Usage**: Use Simple Factory for straightforward cases where you don't expect the code to change often. Use the Factory Method when you expect to add new types in the future, and you want to adhere to OOP principles like inheritance and polymorphism.
 <details>
@@ -93,7 +93,7 @@ That allows us to implement a variety of factories that produce products meant f
 | Usage| Used when a class can't anticipate the type of objects it must create.| Used when the system needs to be independent of how its objects are created and represented.|
 </details>
 
-# Strategy Pattern vs Factory Pattern(from ChatGPT)
+# Strategy Pattern vs Factory Pattern
 While the **Strategy Pattern** can indeed encapsulate the creation of objects, it is not its primary purpose. So, if you want to encapsulate **how** something is done (like which algorithm to use), use the **Strategy Pattern**. If you want to encapsulate **what** is created (like which object to instantiate), use the **Factory Pattern**.
 <details>
   <summary>View more details</summary>
