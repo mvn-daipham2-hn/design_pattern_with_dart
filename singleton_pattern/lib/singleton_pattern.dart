@@ -1,0 +1,1 @@
+library singleton_pattern;
