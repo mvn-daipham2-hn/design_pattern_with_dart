@@ -17,6 +17,10 @@ The connection between the Hollywood Principle and the Template Method Pattern i
 ![Screenshot 2024-08-28 at 14 40 59](https://github.com/user-attachments/assets/0a2922dc-7379-4ff6-828e-5a87b30e451e)
 
 ## Noted Points:
-1. Hooked on Template Method...
+1. Hooked on Template Method:
+A hook is a method that is declared in the abstract class, but only given an empty
+or default implementation. This gives subclasses the ability to “hook into” the algorithm at various points, if they wish; a subclass is also free to ignore the hook.
 
-2. (editing...)
+# Template Method vs Strategy 
+- **Template Method Pattern**: Defines the skeleton of an algorithm in a method, deferring some steps to subclasses. The Template Method allows subclasses to redefine certain steps of an algorithm without changing its structure.
+- **Strategy Pattern**: Encapsulates interchangeable algorithms or behaviors within a class and allows switching between them dynamically at runtime. The Strategy pattern separates the algorithm from the client that uses it.
