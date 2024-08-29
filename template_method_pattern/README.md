@@ -19,8 +19,14 @@ The connection between the Hollywood Principle and the Template Method Pattern i
 ## Noted Points:
 1. Hooked on Template Method:
 A hook is a method that is declared in the abstract class, but only given an empty
-or default implementation. This gives subclasses the ability to “hook into” the algorithm at various points, if they wish; a subclass is also free to ignore the hook.
+or default implementation. This gives subclasses the ability to “hook into” the algorithm at various points if they wish; a subclass is also free to ignore the hook.
+2. Template Methods in the Wild:
+
+**Q**: This implementation of sorting actually seems more like the Strategy Pattern than the Template Method Pattern. Why do we consider it Template Method?
+
+**A**: You’re probably thinking that because the Strategy Pattern uses object composition. You’re right in a way – we’re using the Arrays object to sort our array, so that’s similar to Strategy. But remember, in Strategy, the class that you compose with implements the _**entire**_ algorithm. The algorithm Arrays implements for sort is _**incomplete**_; it needs a class to fill in the missing `compareTo()` method. So, in that way, it’s more like the Template Method.
 
 # Template Method vs Strategy 
 - **Template Method Pattern**: Defines the skeleton of an algorithm in a method, deferring some steps to subclasses. The Template Method allows subclasses to redefine certain steps of an algorithm without changing its structure.
 - **Strategy Pattern**: Encapsulates interchangeable algorithms or behaviors within a class and allows switching between them dynamically at runtime. The Strategy pattern separates the algorithm from the client that uses it.
+
