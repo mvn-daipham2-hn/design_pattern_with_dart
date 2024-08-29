@@ -19,14 +19,16 @@ The connection between the Hollywood Principle and the Template Method Pattern i
 ## Noted Points:
 1. Template Method compose steps with 3 types of methods:
   - Concrete methods: Implement in the superclass.
-  - Abstract methods: Implement in the subclasses.
-  - Hooks: A hook is a method that is declared in the abstract class, but only given an empty
-or default implementation. This gives subclasses the ability to “hook into” the algorithm at various points if they wish; a subclass is also free to ignore the hook.
+  - Abstract methods: Abstract methods are implemented by subclasses.
+  - Hooks: Do nothing or default behavior in the abstract class, but may be overridden in the subclass.
 2. Template Methods in the Wild:
+> You’ll see lots of uses of the Template Method Pattern in real-world code, but don’t expect it all (like any pattern) to be designed “by the book.”
 
-**Q**: This implementation of sorting actually seems more like the Strategy Pattern than the Template Method Pattern. Why do we consider it Template Method?
+**Question**: This implementation of sorting actually seems more like the Strategy Pattern than the Template Method Pattern. Why do we consider it is Template Method?
 
-**A**: You’re probably thinking that because the Strategy Pattern uses object composition. You’re right in a way – we’re using the Arrays object to sort our array, so that’s similar to Strategy. But remember, in Strategy, the class that you compose with implements the _**entire**_ algorithm. The algorithm Arrays implements for sort is _**incomplete**_; it needs a class to fill in the missing `compareTo()` method. So, in that way, it’s more like the Template Method.
+**Answer**: You’re probably thinking that because the Strategy Pattern uses object composition. You’re right in a way – we’re using the Arrays object to sort our array, so that’s similar to Strategy. But remember, in Strategy, the class that you compose with implements the _**entire**_ algorithm. The algorithm Arrays implements for sort is _**incomplete**_; it needs a class to fill in the missing `compareTo()` method. So, in that way, it’s more like the Template Method.
+
+3. The Factory Method is a specialization of the Template Method.
 
 # Template Method vs Strategy 
 - **Template Method Pattern**: Defines the skeleton of an algorithm in a method, deferring some steps to subclasses. The Template Method allows subclasses to redefine certain steps of an algorithm without changing its structure.
