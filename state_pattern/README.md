@@ -10,6 +10,7 @@ The State Pattern allows an object to alter its behavior when its internal state
 
 ## Noted Points:
 1. Put all the behavior of a state into one class. That way, we’re localizing the behavior and making things a lot easier to change and understand.
+2. If I have lots of instances of the Context in my application, is it possible to share the state objects across them? To share your states, you’ll typically assign each state to a static instance variable(**Singleton**). If your state needs to make use of methods or instance variables in your Context, you’ll also have to give it a reference to the Context in each handler() method.
 
 ## State Pattern vs Strategy Pattern
 - Use **Strategy** when you need to choose between different algorithms or ways of doing something, and the client should be able to switch between them.
