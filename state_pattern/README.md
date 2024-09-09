@@ -28,6 +28,7 @@ The State Pattern allows an object to alter its behavior when its internal state
 | **Decoupling**                  | Tighter coupling between states and context (circular dependencies) | Looser coupling; states are more independent |
 
 ## State Pattern vs Strategy Pattern
+> The State and Strategy Patterns have the same class diagram, but they differ in intent.
 - Use **Strategy** when you need to choose between different algorithms or ways of doing something, and the client should be able to switch between them.
 - Use **State** when an object's behavior depends on its state, and you want the transitions between behaviors to happen internally, without the client needing to know the details.
 
