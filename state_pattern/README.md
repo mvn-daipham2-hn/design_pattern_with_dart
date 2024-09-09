@@ -14,8 +14,8 @@ The State Pattern allows an object to alter its behavior when its internal state
 
 ## State Transitions in State Classes & Context Class
 - **State Transitions in State Classes**: Preferred when you want cleaner state-specific logic and a simpler context class. However, it introduces more complexity within the state classes and potential tight coupling with the context.
-  > It makes sense for larger or more complex applications
-- **State Transitions in Context Class**: Better when you want centralized control over transitions, but it can make the context class more complex and harder to extend.
+  > It makes sense for larger or more complex applications.
+- **State Transitions in Context Class**: It is better when you want centralized control over transitions, but it can make the context class more complex and harder to extend.
   > It makes sense for small and simple applications.
 
 | **Aspect** | **State Transitions in State Classes** | **State Transitions in Context Class** |
