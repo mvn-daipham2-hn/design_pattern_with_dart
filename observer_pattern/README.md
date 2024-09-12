@@ -4,7 +4,9 @@ The Observer Pattern defines a one-to-many dependency between objects so that wh
 ## UML diagram: 
 ![Screenshot 2024-08-05 at 14 51 49](https://github.com/user-attachments/assets/9dc75f04-4e09-410e-aed5-37eb8c570e93)
 
-## Design Principles(Subject or Observable, they are the same concept)
+## Design Principles
+(Subject or Observable, they are the same concept)
+
 > Identify the aspects of your application that vary and separate them from what stays the same.
 
 The thing that varies in the Observer Pattern is the state of the Subject and the number and
