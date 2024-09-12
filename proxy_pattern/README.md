@@ -28,6 +28,7 @@ Use the Proxy Pattern to create a representative object that controls access to 
 | **Synchronization Proxy** | Manages concurrent access to an object                            | Ensures thread-safe interactions with shared objects                | A proxy that synchronizes method calls in a multi-threaded environment  |
 | **Firewall Proxy**        | Filters requests before reaching the object                       | Adds security layers or restricts network traffic                   | A proxy that filters requests to a server based on security rules       |
 | **Copy-On-Write Proxy**   | Defers copying of objects until write operations are performed    | Saves memory by avoiding unnecessary object copies                  | A proxy that creates a copy of an object only when it is modified       |
+| **Facade Proxy(Complexity Hiding Proxy)**   | Simplifies the interface to a complex subsystem or object, hiding intricate details from the client.    | When you want to hide complex logic, data manipulation, or subsystem interactions from the user and expose a simpler, more user-friendly interface                  | A proxy that simplifies multiple steps in a file I/O process (open, read, close) by providing a single method for the user to interact with, such as `readFile()`       |
 
 ### Remote Proxy
 > With Remote Proxy, the proxy acts as a local representative for an object that lives in a remote place. A method call on the proxy results in the call being transferred over the wire invoked remotely, and the result being returned to the proxy and then to the Client.
@@ -57,14 +58,7 @@ Use the Proxy Pattern to create a representative object that controls access to 
 - Decorator dynamically adds new functionality to an object without changing its interface, often stacking multiple decorators.
 </details>
 
-### Protection (Access) Proxy
-
-<details>
-  <summary>View more details</summary>
-  
-> Classic definition of this pattern in the Java real world
-![Screenshot 2024-09-11 at 16 18 02](https://github.com/user-attachments/assets/a09667a6-5399-498f-b38a-c92b8a6683c4)
-</details>
-
+### Facade Proxy(Complexity Hiding Proxy)
+> The Complexity Hiding Proxy differs from the Facade Pattern in that the proxy controls access, while the Facade Pattern just provides an alternative interface.
 
 
