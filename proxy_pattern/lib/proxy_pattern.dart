@@ -21,13 +21,29 @@ library proxy_pattern;
 // }
 
 // --- Virtual Proxy ---
-// import 'src/virtual_proxy/icon.dart';
-// import 'src/virtual_proxy/image_proxy.dart';
-//
-// void main() async {
-//   Icon icon = ImageProxy("");
-//   icon.paintIcon(0, 0, 200, 200, "#00FF00");
-// }
+import 'src/virtual_proxy/icon.dart';
+import 'src/virtual_proxy/image_proxy.dart';
+
+void main() async {
+  Icon icon = ImageProxy("");
+  icon.paintIcon(0, 0, 200, 200, "#00FF00");
+
+  // Try change color and resize when image is loading
+  try {
+    icon.changeColor("FF00FF");
+    icon.resize(2);
+  } catch (e) {
+    print(e);
+  }
+  // Wait 3 seconds...
+  await Future.delayed(const Duration(seconds: 3));
+  try {
+    icon.changeColor("FF00FF");
+    icon.resize(2);
+  } catch (e) {
+    print(e);
+  }
+}
 
 // --- Remote Proxy ---
 // import 'src/remote_proxy/remote_proxy_service.dart';

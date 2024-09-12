@@ -1,5 +1,6 @@
 import 'icon.dart';
 
+// Real Object
 class ImageIcon implements Icon {
   String imageURL;
 
@@ -24,11 +25,36 @@ class ImageIcon implements Icon {
     String color,
   ) {
     print("""
-    <<<<<<<<<<< >>>>>>>>>>
-    <<<<<<<<<<< >>>>>>>>>>
-    <<<<<<<<<<< >>>>>>>>>>
-    <<<<<<<<<<< >>>>>>>>>>
-    <<<<<<<<<<< >>>>>>>>>>
+(SCREEN)
+<<<<<<<<<<< >>>>>>>>>>
+<<<<<<<<<<< >>>>>>>>>>
+<<<<<<<<<<< >>>>>>>>>>
+<<<<<<<<<<< >>>>>>>>>>
+<<<<<<<<<<< >>>>>>>>>>
+    """);
+  }
+
+  @override
+  void changeColor(String value) {
+    print("""
+(SCREEN - color is changed to $value)
+<<<<<<<<<<< >>>>>>>>>>
+<<<<<<<<<<< >>>>>>>>>>
+<<<<<<<<<<< >>>>>>>>>>
+<<<<<<<<<<< >>>>>>>>>>
+<<<<<<<<<<< >>>>>>>>>>
+    """);
+  }
+
+  @override
+  void resize(double ratio) {
+    print("""
+(SCREEN - image is resized to $ratio)
+<<<<<<<<<<< >>>>>>>>>>
+<<<<<<<<<<< >>>>>>>>>>
+<<<<<<<<<<< >>>>>>>>>>
+<<<<<<<<<<< >>>>>>>>>>
+<<<<<<<<<<< >>>>>>>>>>
     """);
   }
 }

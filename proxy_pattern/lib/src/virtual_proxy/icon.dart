@@ -8,4 +8,6 @@ abstract class Icon {
     int height,
     String color,
   );
+  void resize(double ratio);
+  void changeColor(String value);
 }
