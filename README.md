@@ -1,17 +1,10 @@
-> **Objectville** is a term from the book "Head First Design Patterns" by Kathy Sierra and Bert Bates, a popular guide to design patterns in object-oriented programming.
-> 
-> In the book, Objectville humorously represents the world of OOP as a "city" where objects live, interact, and follow design principles and patterns. Each object has a specific responsibility, communicates through methods, and adheres to good design practices.
-
 # Design Principles:
 1. Encapsulate what varies.
-    - [Strategy Pattern](https://github.com/mvn-daipham2-hn/design_pattern_with_dart/blob/main/strategy_pattern/README.md#design-principles)
-    - [Observer Pattern](https://github.com/mvn-daipham2-hn/design_pattern_with_dart/blob/main/observer_pattern/README.md#design-principles)   
+    - [Strategy Pattern](https://github.com/mvn-daipham2-hn/design_pattern_with_dart/blob/main/strategy_pattern/README.md#design-principles) 
 2. Favor composition over inheritance
    - [Strategy Pattern](https://github.com/mvn-daipham2-hn/design_pattern_with_dart/blob/main/strategy_pattern/README.md#design-principles)
-   - [Observer Pattern](https://github.com/mvn-daipham2-hn/design_pattern_with_dart/blob/main/observer_pattern/README.md#design-principles)
 3. Program to interfaces, not implementations.
    - [Strategy Pattern](https://github.com/mvn-daipham2-hn/design_pattern_with_dart/blob/main/strategy_pattern/README.md#design-principles)
-   - [Observer Pattern](https://github.com/mvn-daipham2-hn/design_pattern_with_dart/blob/main/observer_pattern/README.md#design-principles)
 4. Strive for loosely coupled designs between objects that interact.
    - [Observer Pattern](https://github.com/mvn-daipham2-hn/design_pattern_with_dart/blob/main/observer_pattern/README.md#design-principles)
 5. **Open-Closed principle**: Classes should be open for extension but closed for modification.
