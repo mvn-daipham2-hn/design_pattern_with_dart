@@ -13,7 +13,7 @@
    - [Strategy Pattern](https://github.com/mvn-daipham2-hn/design_pattern_with_dart/blob/main/strategy_pattern/README.md#design-principles)
    - [Observer Pattern](https://github.com/mvn-daipham2-hn/design_pattern_with_dart/blob/main/observer_pattern/README.md#design-principles)
 4. Strive for loosely coupled designs between objects that interact.
-   
+   - [Observer Pattern](https://github.com/mvn-daipham2-hn/design_pattern_with_dart/blob/main/observer_pattern/README.md#design-principles)
 5. **Open-Closed principle**: Classes should be open for extension but closed for modification.
    - [Decorator Pattern](https://github.com/mvn-daipham2-hn/design_pattern_with_dart/blob/main/decorator_pattern/README.md#design-principles)
 6. **The Dependency Inversion**: Depend on abstractions. Do not depend on concrete classes.
