@@ -20,3 +20,7 @@ Both the Subject and Observer use interfaces. The Subject keeps track of objects
 
 The Observer Pattern uses composition to compose any number of Observers with their Subjects. These relationships aren’t set up by some kind of
 inheritance hierarchy. No, they are set up at runtime by composition!
+
+> Strive for loosely coupled designs between objects that interact.
+
+Loosely coupled designs allow us to build flexible OO systems that can handle change because they minimize the interdependency between objects.
