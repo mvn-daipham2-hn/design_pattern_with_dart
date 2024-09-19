@@ -1,3 +1,5 @@
+import '../../adapter/goose.dart';
+import '../../adapter/goose_adapter.dart';
 import '../../duck_call.dart';
 import '../../mallard_duck.dart';
 import '../../quackable.dart';
@@ -24,5 +26,9 @@ class DuckFactory implements AbstractDuckFactory {
   @override
   Quackable createRubberDuck() {
     return RubberDuck();
+  }
+
+  Quackable createGooseDuck() {
+    return GooseAdapter(Goose());
   }
 }

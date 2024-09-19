@@ -1,11 +1,10 @@
 library compound_patterns;
 
-import 'adapter/goose.dart';
-import 'adapter/goose_adapter.dart';
 import 'composite/flock.dart';
 import 'decorator/quack_counter.dart';
 import 'factory/abstract_factory/abstract_duck_factory.dart';
 import 'factory/abstract_factory/counting_duck_factory.dart';
+import 'factory/abstract_factory/duck_factory.dart';
 import 'observer/quackologist.dart';
 import 'quackable.dart';
 
@@ -23,7 +22,7 @@ void simulate(AbstractDuckFactory duckFactory) {
   Quackable redheadDuck = duckFactory.createRedheadDuck();
   Quackable duckCall = duckFactory.createDuckCall();
   Quackable rubberDuck = duckFactory.createRubberDuck();
-  Quackable gooseDuck = GooseAdapter(Goose());
+  Quackable gooseDuck = DuckFactory().createGooseDuck();
   print("Duck Simulator: With Composite - Flocks");
   flockOfDucks.add(redheadDuck);
   flockOfDucks.add(duckCall);
