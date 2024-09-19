@@ -31,14 +31,18 @@ When something changes in the model, based either on some action you took (like 
 5. **The view asks the model for state**.
 The view gets the state it displays directly from the model. For instance, when the model notifies the view that a new song has started playing, the view requests the song name from the model and displays it. The view might also ask the model for state as the result of the controller requesting some change in the view.
 
+**Important Q&A:**
+
 > **Does the controller ever become an observer of the model?**
 
 Sure. In some designs the controller registers with the model and is notified
 of changes. This can be the case when something in the model directly affects the user interface controls. For instance, certain states in the model may dictate that some interface items be enabled or disabled. If so, it is really controller’s job to ask the view to update its display accordingly.
 
-> **Why can’t I just do that in the view code?** 
+> **Why can’t I just do that(the code manipulate "model") in the view code?** 
 
-You could; however,  you don’t want to for two reasons: **First**, you’ll **complicate your view code** because it now has two responsibilities: managing the user interface and dealing with logic of how to control the model.
+You could; however,  you don’t want to for two reasons: 
+
+**First**, you’ll **complicate your view code** because it now has two responsibilities: managing the user interface and dealing with logic of how to control the model.
 
 **Second**, you’re **tightly coupling your view to the model**. If you want to reuse the view with another model, forget it. The controller separates the logic of control from the view and decouples the view from the model. By keeping the view and controller loosely coupled, you are building a more flexible and extensible design, one that can more easily accommodate change down the road.
 </details>
@@ -53,6 +57,17 @@ You could; however,  you don’t want to for two reasons: **First**, you’ll **
 
 ![Screenshot 2024-09-16 at 17 16 21](https://github.com/user-attachments/assets/2de16345-247e-4b17-95f5-223946115804)
 
+**Important Q&A:**
+
+> **Does the controller ever implement any application logic?**
+
+****No, the controller implements behavior for the view. It is the smarts that translate the actions from the view to actions on the model.**
+The model takes those actions and implements the application logic to decide what to do in response to those actions. The controller might have to do a little work to determine what method calls to make on the model, but that’s not considered the “application logic.” **The application logic is the code that manages and manipulates your data and it lives in your model.**
+
+> I’ve always found the word **“model”** hard to wrap my head around. I now get that **it’s the guts of the application**, but why was such a vague, hard-to-understand word used to describe this aspect of the MVC?
+
+**When MVC was named they needed a word that began with an “M” otherwise they couldn’t have called it MVC.**
+But seriously, we agree with you, everyone scratches their head and wonders what a model is. **But then everyone realizes that they can’t think of a better word either.**
 </details>
 
 
