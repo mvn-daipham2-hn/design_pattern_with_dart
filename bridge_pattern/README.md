@@ -1,39 +1,21 @@
-<!--
-This README describes the package. If you publish this package to pub.dev,
-this README's contents appear on the landing page for your package.
+# Bridge Pattern
 
-For information about how to write a good package README, see the guide for
-[writing package pages](https://dart.dev/guides/libraries/writing-package-pages).
+## Problem-solving: 
+Independently extend both the abstraction and the implementation hierarchies without affecting each other.
 
-For general information about developing packages, see the Dart guide for
-[creating packages](https://dart.dev/guides/libraries/create-library-packages)
-and the Flutter guide for
-[developing packages and plugins](https://flutter.dev/developing-packages).
--->
+## UML diagram:
+![Bridge_Design](https://github.com/user-attachments/assets/fe0a533d-70d7-4481-acea-01c48d0629fb)
 
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
+## Benefits:
+- Decouples an implementation so that it is not bound permanently to an interface.
 
-## Features
+- Abstraction and implementation can be extended independently.
 
-TODO: List what your package can do. Maybe include images, gifs, or videos.
+- Changes to the concrete abstraction classes don’t affect the client.
 
-## Getting started
+## Uses and Drawbacks:
+- Useful in graphic and windowing systems that need to run over multiple platforms.
 
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
+- Useful any time you need to vary an interface and an implementation in different ways.
 
-## Usage
-
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder.
-
-```dart
-const like = 'sample';
-```
-
-## Additional information
-
-TODO: Tell users more about the package: where to find more information, how to
-contribute to the package, how to file issues, what response they can expect
-from the package authors, and more.
+- Increases complexity.
