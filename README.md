@@ -226,7 +226,7 @@ Jim: I try to **get familiar with all the patterns and their relationships first
 
 Frank: That makes sense. So once you know the pattern is right, how do you approach working it into your design and implementing it?
 
-Jim: That’s where the class diagram comes in. I first read over the **Structure** section to review the diagram and then over the **Participants** section to make sure I understand each classes’ role. From there I work it into my design, making any alterations I need to make it fit. Then I review the **Implementation** and **Sample code** sections to make sure I know about any good implementation techniques or gotchas I might encounter.
+Jim: That’s where the class diagram comes in. I first read over the **Structure** section to review the diagram and then over the **Participants** section to make sure I understand each classes’ role. From there I work it into my design, making any alterations I need to make it fit. Then I review the **Implementation** and **Sample Code** sections to make sure I know about any good implementation techniques or gotchas I might encounter.
 </details>
 
 
