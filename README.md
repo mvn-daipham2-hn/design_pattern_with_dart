@@ -216,6 +216,20 @@ Not obsessed with using patterns; rather it looks for simple solutions that best
 - Dead Code usually refers to sections of code (methods, functions, or blocks) that are still part of the project but no longer executed.
 </details>
 
+## How to use the book "Design Patterns: Elements of Reusable Object-Oriented"?
+<details>
+    <summary>View more details</summary>
+
+Joe: So Jim, how are you actually using the catalog? When you have a problem, do you go fishing in the catalog for a solution?
+
+Jim: I try to **get familiar with all the patterns and their relationships first**. Then, when I need a pattern, I have some idea of what it is. I go back and look at the **Motivation** and **Applicability** sections to make sure I’ve got it right. There is also another really important section: **Consequences**. I review that to make sure there won’t be some unintended effect on my design.
+
+Frank: That makes sense. So once you know the pattern is right, how do you approach working it into your design and implementing it?
+
+Jim: That’s where the class diagram comes in. I first read over the **Structure** section to review the diagram and then over the **Participants** section to make sure I understand each classes’ role. From there I work it into my design, making any alterations I need to make it fit. Then I review the **Implementation** and **Sample code** sections to make sure I know about any good implementation techniques or gotchas I might encounter.
+</details>
+
+
 
 
 
