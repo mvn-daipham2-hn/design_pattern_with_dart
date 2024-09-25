@@ -3,6 +3,7 @@
 Use the Builder Pattern to encapsulate the construction of a product and allow it to be constructed in steps.
 
 ## UML diagram:
+![Screenshot 2024-09-25 at 16 15 06](https://github.com/user-attachments/assets/b8856ec3-412c-42e4-a22a-f0cc34781560)
 
 ## Benefits:
 - Encapsulates the way a complex object is constructed.
