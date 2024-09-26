@@ -3,6 +3,7 @@
 Use the Chain of Responsibility Pattern when you want to give more than one object a chance to handle a request.
 
 ## UML diagram:
+![Screenshot 2024-09-26 at 15 44 25](https://github.com/user-attachments/assets/a6187ea3-73e5-4eec-967f-4daa056164d7)
 
 ## Benefits:
 - Decouples the sender of the request and its receivers.
