@@ -198,22 +198,22 @@ Not obsessed with using patterns; rather it looks for simple solutions that best
 #### Differences between God Object vs Big Ball of Mud
 > In short, the **God Object** is a symptom of poor object design on a class level, while the **Big Ball of Mud** is a more systemic problem, indicating poor architecture and organization throughout the entire application.
 
-**Scope**: The God Object refers to a single class or object doing too much, whereas the Big Ball of Mud describes the entire system being poorly structured.
+- **Scope**: The God Object refers to a single class or object doing too much, whereas the Big Ball of Mud describes the entire system being poorly structured.
 
-**Focus**:
-- The God Object is about improper responsibility assignment within a class.
-- The Big Ball of Mud is about the overall architecture of the system being messy and lacking organization.
+- **Focus**:
+    - The God Object is about improper responsibility assignment within a class.
+    - The Big Ball of Mud is about the overall architecture of the system being messy and lacking organization.
 
 #### Differences between Boat Anchor vs Dead Code 
 > In summary, **Boat Anchor** involves unused but integrated components kept around just in case, whereas **Dead Code** refers to sections of code that are obsolete and no longer play an active role.
 
-**Source of Unused Code**:
-- Boat Anchor is intentionally kept around in case it becomes useful later, but never actually used.
-- Dead Code was once used or planned to be used but became redundant or unreachable after changes in the codebase.
+- **Source of Unused Code**:
+    - Boat Anchor is intentionally kept around in case it becomes useful later, but never actually used.
+    - Dead Code was once used or planned to be used but became redundant or unreachable after changes in the codebase.
 
-**Type of Component**:
-- Boat Anchor can be a larger construct, like libraries, configurations, or features.
-- Dead Code usually refers to sections of code (methods, functions, or blocks) that are still part of the project but no longer executed.
+- **Type of Component**:
+    - Boat Anchor can be a larger construct, like libraries, configurations, or features.
+    - Dead Code usually refers to sections of code (methods, functions, or blocks) that are still part of the project but no longer executed.
 </details>
 
 ## How to use the book "Design Patterns: Elements of Reusable Object-Oriented"?
