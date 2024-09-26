@@ -49,17 +49,17 @@ a design that resolves the goal and constraints and leads to a solution.**_
     <summary>View more details</summary>
 These forces shape how a pattern is applied and help explain why a particular pattern is appropriate for solving a specific problem. They typically include aspects such as:
 
-- System Requirements: What the software needs to achieve, including functionality and performance expectations.
+- **System Requirements**: What the software needs to achieve, including functionality and performance expectations.
   
-- Trade-offs: The compromises between different design options, such as simplicity vs. flexibility, or memory usage vs. processing speed.
+- **Trade-offs**: The compromises between different design options, such as simplicity vs. flexibility, or memory usage vs. processing speed.
 
-- Context: The specific environment or circumstances under which the pattern is being applied.
+- **Context**: The specific environment or circumstances under which the pattern is being applied.
 
-- Limitations: Any technical or organizational constraints, like programming language features, time, or team experience.
+- **Limitations**: Any technical or organizational constraints, like programming language features, time, or team experience.
 
-- Non-functional Requirements: Performance, scalability, security, and maintainability needs that influence the design.
+- **Non-functional Requirements**: Performance, scalability, security, and maintainability needs that influence the design.
   
-In short, "forces" are the factors that drive the need for a particular pattern and guide its application in solving a problem effectively.
+In short, "**forces**" are the factors that drive the need for a particular pattern and guide its application in solving a problem effectively.
 </details>
 
 ## Pattern Categories:
