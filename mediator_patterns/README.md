@@ -3,6 +3,7 @@
 Use the Mediator Pattern to centralize complex communications and control between related objects.
 
 ## UML diagram:
+![Screenshot 2024-10-01 at 15 37 28](https://github.com/user-attachments/assets/2e0cfa73-1d28-45c2-9137-798ebaa3776b)
 
 ## Implementation:
 1. **Omitting the abstract Mediator class**.
