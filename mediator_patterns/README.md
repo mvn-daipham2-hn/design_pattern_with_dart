@@ -5,6 +5,17 @@ Use the Mediator Pattern to centralize complex communications and control betwee
 ## UML diagram:
 ![Screenshot 2024-10-01 at 15 37 28](https://github.com/user-attachments/assets/2e0cfa73-1d28-45c2-9137-798ebaa3776b)
 
+• **_Mediator_**
+- defines an interface for communicating with Colleague objects.
+  
+• **_ConcreteMediator_**
+- implements cooperative behavior by coordinating Colleague objects.
+- knows and maintains its colleagues.
+  
+• **_Colleague classes_**
+- each Colleague class knows its Mediator object.
+- each colleague communicates with its mediator whenever it would have otherwise communicated with another colleague.
+
 ## Implementation:
 1. **Omitting the abstract Mediator class**.
 There's no need to define an abstract Mediator class when colleagues work with only one mediator.
