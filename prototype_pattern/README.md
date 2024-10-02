@@ -1,8 +1,18 @@
 # Prototype Pattern
 ## Problem-solving:
-Use the Prototype Pattern when creating an instance of a given class is either expensive or complicated.
+Using the Prototype Pattern when creating an instance of a given class is either expensive or complicated.
 
 ## UML diagram:
+![Screenshot 2024-10-02 at 17 14 51](https://github.com/user-attachments/assets/84bf9c65-a051-4d72-a6a4-1a4ddafcbab1)
+
+• **_Prototype_**
+- declares an interface for cloning itself.
+  
+• **_ConcretePrototype_**
+- implements an operation for cloning itself.
+
+• **_Client_**
+- creates a new object by asking a prototype to clone itself.
 
 ## Benefits:
 - Hides the complexities of making new instances from the client.
