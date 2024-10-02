@@ -5,6 +5,21 @@ Use the Builder Pattern to encapsulate the construction of a product and allow i
 ## UML diagram:
 ![Screenshot 2024-09-25 at 16 15 06](https://github.com/user-attachments/assets/b8856ec3-412c-42e4-a22a-f0cc34781560)
 
+• **_Builder_**
+- specifies an abstract interface for creating parts of a Product object.
+
+• **_ConcreteBuilder_**
+- constructs and assembles parts of the product by implementing the Builder interface.
+- defines and keeps track of the representation it creates.
+- provides an interface for retrieving the product
+  
+• **_Director_**
+- constructs an object using the Builder interface.
+  
+• **_Product_**
+- represents the complex object under construction. ConcreteBuilder builds the product's internal representation and defines the process by which it's assembled.
+- includes classes that define the constituent parts, including interfaces for assembling the parts into the final result.
+
 ## Benefits:
 - Encapsulates the way a complex object is constructed.
 
