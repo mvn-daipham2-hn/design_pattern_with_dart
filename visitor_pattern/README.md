@@ -3,6 +3,7 @@
 Use the Visitor Pattern when you want to add capabilities to a composite of objects and encapsulation is not important.
 
 ## UML diagram:
+![Screenshot 2024-10-03 at 15 32 12](https://github.com/user-attachments/assets/034af171-ce60-40ce-b444-961d27bbc56a)
 
 • **_Visitor_**
 - declares a Visit operation for each class of ConcreteElement in the object structure.
