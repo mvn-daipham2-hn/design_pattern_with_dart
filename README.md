@@ -220,7 +220,9 @@ Not obsessed with using patterns; rather it looks for simple solutions that best
 <details>
     <summary>View more details</summary>
 
-Joe: So Jim, how are you actually using the catalog? When you have a problem, do you go fishing in the catalog for a solution?
+![Screenshot 2024-10-04 at 08 53 36](https://github.com/user-attachments/assets/0bd89442-d293-4069-a0d7-0c694df9b7d5)
+
+Joe: So Jim, **how are you actually using the catalog? When you have a problem, do you go fishing in the catalog for a solution?**
 
 Jim: I try to **get familiar with all the patterns and their relationships first**. Then, when I need a pattern, I have some idea of what it is. I go back and look at the **Motivation** and **Applicability** sections to make sure I’ve got it right. There is also another really important section: **Consequences**. I review that to make sure there won’t be some unintended effect on my design.
 
